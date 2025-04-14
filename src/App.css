@@ -1,19 +1,32 @@
+body{
+  background-color: rgb(99, 94, 94);
+}
+
 .expense-tracker {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px;
   font-family: Arial, sans-serif;
 }
 
-h1, h2, h3 {
-  color: #333;
+h1, h2 {
+  color: #0f0f0f;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 40px;
 }
 
 .add-expense {
-  background-color: #f5f5f5;
+  flex: 1;
+  background-color:#5f2727;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
+}
+
+.expenses-list {
+  flex: 2;
 }
 
 .form-group {
@@ -33,56 +46,51 @@ h1, h2, h3 {
   border-radius: 4px;
 }
 
-button {
-  padding: 8px 15px;
+.add-button {
+  padding: 10px 15px;
+  background-color:black;
+  color:#eef3f3;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  margin-right: 10px;
+  width: 100%;
 }
 
-.add-button {
-  background-color: #4CAF50;
-  color: white;
+.add-button:hover {
+  background-color: #2385e0;
 }
 
-.edit-button {
-  background-color: #2196F3;
-  color: white;
+.search-bar {
+  margin-bottom: 20px;
 }
 
-.delete-button {
-  background-color: #f44336;
-  color: white;
-}
-
-.expenses-list {
-  margin-top: 30px;
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 table {
-  width: 100%;
+  width: 250%;
   border-collapse: collapse;
 }
 
 th, td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #110f0f;
+}
+tr{
+  background-color: #5f2727;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #141414;
+  color: #f5f5f5;
 }
 
 tr:hover {
-  background-color: #f5f5f5;
-}
-
-.performance {
-  background-color: #e9f7ef;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background-color: #8f4646;
 }
